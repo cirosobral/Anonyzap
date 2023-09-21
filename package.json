@@ -1,0 +1,17 @@
+{
+  "name": "anonyzap",
+  "module": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "bun run ~/dev/bun/index.js"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "deepai": "^1.0.23"
+  }
+}

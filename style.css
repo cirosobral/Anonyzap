@@ -1,0 +1,42 @@
+/* Garante o espaço do navbar */
+body {
+  padding-bottom: 7em;
+}
+
+.message {
+  display: flex;
+  padding: 0 5em 0 0;
+  margin: 1em 0;
+}
+
+.message.self {
+  justify-content: flex-end;
+  padding: 0 0 0 5em;
+
+}
+
+.message>div {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0.25em 0.3em;
+  background: gainsboro;
+  transition: all 0.2s ease-in-out;
+}
+
+.message>div:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0 0.25em 0.6em;
+}
+
+.message.self>div {
+  background: darkseagreen;
+}
+
+[data-bs-theme=dark] .message>div {
+  background: darkslategray;
+}
+
+[data-bs-theme=dark] .message.self>div {
+  background: darkgreen;
+}
+
+.time {
+  font-size: smaller;
+}
