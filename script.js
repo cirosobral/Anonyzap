@@ -21,15 +21,15 @@ function newMessage(message, self = false) {
   template.parentElement.appendChild(clone)
 
   if (scroll)
-    window.scrollTo(0, document.documentElement.scrollHeight);
+    window.scrollTo(0, document.documentElement.scrollHeight)
 }
 
 // Verifica se o usuário está no fim da página
 function isUserAtBottom() {
-  const pageHeight = document.documentElement.scrollHeight;
-  const windowHeight = window.innerHeight;
-  const scrollY = window.scrollY || window.pageYOffset;
-  const lastMessage = document.querySelector('.message:last-of-type').offsetHeight;
+  const pageHeight = document.documentElement.scrollHeight
+  const windowHeight = window.innerHeight
+  const scrollY = window.scrollY || window.pageYOffset
+  const lastMessage = document.querySelector('.message:last-of-type')?.offsetHeight ?? 0
   return scrollY + windowHeight >= pageHeight - lastMessage;
 }
 
