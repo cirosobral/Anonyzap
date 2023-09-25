@@ -12,7 +12,6 @@ body {
 .message.self {
   justify-content: flex-end;
   padding: 0 0 0 5em;
-
 }
 
 .message>div {

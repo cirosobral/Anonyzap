@@ -13,7 +13,7 @@ function newMessage(message, self = false) {
   const scroll = isUserAtBottom()
 
   clone.querySelector('.text').innerText = message.message
-  clone.querySelector('.time').innerText = new Date(message.time).toTimeString().substr(0, 5)
+  clone.querySelector('.time').innerText = new Date(message.time).toTimeString().substring(0, 5)
 
   if (self)
     clone.querySelector('.message').classList.add('self')
