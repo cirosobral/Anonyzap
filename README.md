@@ -26,4 +26,4 @@ Para rodar o servidor, execute:
 bun run index.js
 ```
 
-Esse comando irá rodar um servidor em [http://localhost:3000]. Abra esse endereço com o navegador de sua preferência.
+Esse comando irá rodar um servidor em [http://localhost:3000](http://localhost:3000). Abra esse endereço com o navegador de sua preferência.
